@@ -18,7 +18,15 @@ document.getElementById('history-btn')
 // Blog 
 document.getElementById('blog-btn')
     .addEventListener('click', function(){
-        window.location.href = '/blog.html';
+        // window.location.href = './blog.html';
+        console.log('btn-blog')
 });
 
+
+// home 
+document.getElementById('shahin-btn')
+    .addEventListener('click', function(){
+        // window.location.href = './index.html';
+        console.log('btn-home')
+});
 

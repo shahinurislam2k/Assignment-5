@@ -8,8 +8,7 @@ document.getElementById('donate-btn-feni')
     console.log(inputDonateFeni, donateBalanceFeni, mainBalance);
 
     
-    if(isNaN(inputDonateFeni)){
-        alert('Failed to add the money');
+    if(isNaN(inputDonateFeni));
         return;
     }
 
@@ -21,7 +20,9 @@ document.getElementById('donate-btn-feni')
     document.getElementById('main-balance').innerText = newMainBalance;
 
 
-    // history
+
+
+    // history added section
     const p = document.createElement('p');
     p.innerText = `
         ${inputDonateFeni} Taka is Donated for flood at Feni, Bangladesh 
