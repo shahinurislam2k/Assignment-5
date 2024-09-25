@@ -8,7 +8,7 @@ document.getElementById('donate-btn-quota')
     console.log(inputDonateQuota, donateBalanceQuota, mainBalance);
 
     
-    if(isNaN(inputDonateQuota)){
+    if(isNaN(inputDonateQuota)  || inputDonateQuota <= 0 ){
         document.getElementById('my_modal_1').close();
         alert('Failed to donate the money');
         return;

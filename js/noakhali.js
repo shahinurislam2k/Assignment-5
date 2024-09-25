@@ -6,12 +6,15 @@ document.getElementById('donate-btn-noakhali')
     const donateBalanceNoakhili = getTextFieldValueById('donate-balance-noakhali');
     const mainBalance = getTextFieldValueById('main-balance');
 
-    
-    if(isNaN(inputDonateNoakhali)){
-        document.getElementById('my_modal_1').close()
+
+    if(isNaN(inputDonateNoakhali) || inputDonateNoakhali <= 0 ){
+        document.getElementById('my_modal_1').close();
         alert('Failed to donate the money');
         return;
     }
+
+   
+
 
 
     const newDonateBalanceNoakhili = donateBalanceNoakhili + inputDonateNoakhali;

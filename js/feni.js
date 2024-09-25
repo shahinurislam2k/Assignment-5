@@ -8,7 +8,7 @@ document.getElementById('donate-btn-feni')
     console.log(inputDonateFeni, donateBalanceFeni, mainBalance);
 
     
-    if(isNaN(inputDonateFeni)){
+    if(isNaN(inputDonateFeni) || inputDonateFeni <= 0 ){
         document.getElementById('my_modal_1').close()
         alert('Failed to add the money');
         return;
