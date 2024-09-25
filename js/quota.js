@@ -9,6 +9,7 @@ document.getElementById('donate-btn-quota')
 
     
     if(isNaN(inputDonateQuota)){
+        document.getElementById('my_modal_1').close();
         alert('Failed to donate the money');
         return;
     }
@@ -28,7 +29,7 @@ document.getElementById('donate-btn-quota')
 // history
     const p = document.createElement('p');
     p.innerText = `
-        ${inputDonateQuota} Taka is Donated for Quota Movememt
+        ${inputDonateQuota} Taka is Donated for Donate for flood at Quota Movememt
         ${new Date()}
     `;
 

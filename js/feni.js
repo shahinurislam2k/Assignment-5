@@ -9,6 +9,7 @@ document.getElementById('donate-btn-feni')
 
     
     if(isNaN(inputDonateFeni)){
+        document.getElementById('my_modal_1').close()
         alert('Failed to add the money');
         return;
     }
@@ -24,7 +25,7 @@ document.getElementById('donate-btn-feni')
     // history added
     const p = document.createElement('p');
     p.innerText = `
-        ${inputDonateFeni} Taka is Donated for flood at Feni, Bangladesh 
+        ${inputDonateFeni} Taka is Donated for Donate for flood at Feni, Bangladesh 
         ${new Date()}
     `;
     

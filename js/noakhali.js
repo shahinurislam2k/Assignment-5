@@ -8,7 +8,8 @@ document.getElementById('donate-btn-noakhali')
 
     
     if(isNaN(inputDonateNoakhali)){
-        alert('Failed to add the money');
+        document.getElementById('my_modal_1').close()
+        alert('Failed to donate the money');
         return;
     }
 
@@ -26,8 +27,10 @@ document.getElementById('donate-btn-noakhali')
     // history
     const p = document.createElement('p');
     p.innerText = `
-        ${inputDonateNoakhali} Taka is Donated for flood at Noakhali, Bangladesh 
-        ${new Date()}
+        ${inputDonateNoakhali
+
+        } Taka is Donated for Donate for flood at Noakhali, Bangladesh 
+        Date: ${new Date()}
     `;
 
     document.getElementById('History-container').appendChild(p);
