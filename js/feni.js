@@ -16,10 +16,10 @@ document.getElementById('donate-btn-feni')
 
 
     const newDonateBalanceFeni = donateBalanceFeni + inputDonateFeni;
-    document.getElementById('donate-balance-feni').innerText = newDonateBalanceFeni;
+    document.getElementById('donate-balance-feni').innerText = newDonateBalanceFeni.toFixed(2);
 
     const newMainBalance = mainBalance - inputDonateFeni;
-    document.getElementById('main-balance').innerText = newMainBalance;
+    document.getElementById('main-balance').innerText = newMainBalance.toFixed(2);
 
 
     // history added

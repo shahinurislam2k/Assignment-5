@@ -17,10 +17,12 @@ document.getElementById('donate-btn-quota')
 
 
     const newDonateBalanceQuota = donateBalanceQuota + inputDonateQuota;
-    document.getElementById('donate-balance-quota').innerText = newDonateBalanceQuota;
+    document.getElementById('donate-balance-quota').innerText = newDonateBalanceQuota.toFixed(2);
 
     const newMainBalance = mainBalance - inputDonateQuota;
-    document.getElementById('main-balance').innerText = newMainBalance;
+    document.getElementById('main-balance').innerText = newMainBalance.toFixed(2);
+
+
 
 
 

@@ -18,10 +18,10 @@ document.getElementById('donate-btn-noakhali')
 
 
     const newDonateBalanceNoakhili = donateBalanceNoakhili + inputDonateNoakhali;
-    document.getElementById('donate-balance-noakhali').innerText = newDonateBalanceNoakhili;
+    document.getElementById('donate-balance-noakhali').innerText = newDonateBalanceNoakhili.toFixed(2);
 
     const newMainBalance = mainBalance - inputDonateNoakhali;
-    document.getElementById('main-balance').innerText = newMainBalance;
+    document.getElementById('main-balance').innerText = newMainBalance.toFixed(2);
 
 
 
