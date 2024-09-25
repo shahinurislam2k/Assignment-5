@@ -8,7 +8,8 @@ document.getElementById('donate-btn-feni')
     console.log(inputDonateFeni, donateBalanceFeni, mainBalance);
 
     
-    if(isNaN(inputDonateFeni));
+    if(isNaN(inputDonateFeni)){
+        alert('Failed to add the money');
         return;
     }
 
@@ -20,18 +21,12 @@ document.getElementById('donate-btn-feni')
     document.getElementById('main-balance').innerText = newMainBalance;
 
 
-
-
-    // history added section
+    // history added
     const p = document.createElement('p');
     p.innerText = `
         ${inputDonateFeni} Taka is Donated for flood at Feni, Bangladesh 
         ${new Date()}
     `;
     
-
     document.getElementById('History-container').appendChild(p);
-
-
-
 })
